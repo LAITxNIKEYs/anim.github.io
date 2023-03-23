@@ -33,9 +33,7 @@
         <a-assets> <img src="src/ravka.jpg" id="pol"></a-assets>  
     <a-marker id="mark"  preset="custom" type="pattern" url="pat\pattern-g.patt">              
         <a-plane scr="#pol" position="0 0 0 rotation="-90 90 0" width="20" >
-          <a-gltf-model onclick="OnClic()" rotation="0 -90 0" src="#svin"  position="0 1 0" >
-            <a-animation attribute="rotation" dur="3000" to="0 360 0" repeat="indefinite"></a-animation>
-          </a-gltf-model> 
+         <a-gltf-model src="#svin" position="0 1 0" rotation="0 -90 0" animation-mixer="clip: Take 001; loop:once"> </a-gltf-model> 
         </a-plane>
         
     </a-marker> 
